@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="with=device-width, initial- scale=1.0">
+    <title>Platforma Web Sala de Fitness,Antrenamente Personale</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="scripts.js" defer></script>
+</head>
+<body>
+  
+   <section class="header">
+        <nav>
+          <div class="logo">
+        <h4>Fitness.ro</h4>
+      </div>
+          <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="ascundeMeniul()"></i>
+           <ul>
+             <li><a href="index.html">ACASĂ</a></li>
+             <li><a href="Descopera-ne.html">DESCOPERĂ-NE</a></li>
+             <li><a href="vreausamaantrenez.html">VREAU SĂ MĂ ANTRENEZ!</a></li>
+             <li><a href="contact.html">CONTACT</a></li>
+             
+             <li><button class="auth-btn" onclick="verificaLogare(),oops()">Autentificare/Deconectare</button></li>
+
+            </ul>
+            </div>
+            <i class="fa fa-bars"onclick="arataMeniul()"></i>
+        </nav>
+       
+        <div class="text-box">
+          <h1>Bine ai venit pe platforma noastră!
+          </h1>
+              <p>
+                  Aici vei descoperi tot ce ai nevoie pentru a-ți atinge obiectivele într-o sală de fitness - de la programe de antrenament personalizate până la sfaturi despre nutriție și sănătate. Vrem să te inspirăm și să te susținem în călătoria ta către o viață mai sănătoasă și mai activă. Explorează articolele noastre și programele noastre de antrenament pentru a găsi resursele de care ai nevoie pentru a-ți atinge obiectivele tale de fitness și a adopta un stil de viață echilibrat. </p>
+                 
+           <a href="Descopera-ne.html" class="visit">Afla mai multe despre noi!</a>
+  
+          
+       </div>  
+        
+
+        
+     </div>  
+
+   </section>
+
+      
+
+  
+
+
+
+   <!----Programe --->
+
+   <section class="lmd reveal">
+    <h1 class="reveal">Serviciile noastre!</h1>
+    <p style="font-size:20px;">Echipa noastră oferă o gamă diversă de programe și resurse pentru îmbunătățirea sănătății și a calității vieții tale. Explorează mai jos programele noastre specializate:</p>
+       
+    <div class="row reveal">
+       
+      <div class="progr-col reveal" >
+      <h3>PROGRAME DE ANTRENAMENT IN SALA </h3>
+      <p> In functie de obiectivul pe care il doresti, impreuna gasim cea mai buna solutie pentru nevoile tale.</p>
+       </div>
+    
+       <div class="progr-col reveal">
+        <h3>PROGRAME DE RECUPERARE MEDICALA  </h3>
+        <p>Castiga motricitate, forta, rezistenta musculara si zero dureri cu ajutorul programelor de recuperare medicala.</p>
+      </div>
+    
+      <div class="progr-col reveal">
+        <h3>PROGRAME DE ANTRENAMENTE ONLINE </h3>
+        <p>Poti ramane in forma oriunde ai fi. Descopera programele de antrenament pe care le poti face acasa sau in aer liber, dar si in sala, doar cu ajutorul telefonului tau.</p>
+      </div>
+    
+    </div>
+    </section>
+
+
+
+    
+    
+       
+    <!--poze-->
+
+      <section class="reveal">
+        <div class="container-img">
+          <div class="box">
+            <img src="poze/a.jpg">
+          </div>
+          <div class="box">
+            <img src="poze/b.jpg">
+          </div>
+          <div class="box">
+            <img src="poze/c.jpg">
+          </div>
+          <div class="box">
+            <img src="poze/d.jpg">
+          </div>
+          <div class="box">
+            <img src="poze/e.jpg">
+          </div>
+        </div>
+
+
+        <style>
+          .container-img{
+            width: 90%;
+            padding: 20px;
+            margin: 100px auto;	 
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+          }
+          
+        
+          .box{
+            width: 250px;
+            margin: 0 10px;
+            transition: 1s;
+            border: 10px solid transparent;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+        
+          }
+          .box img{
+            display: block;
+            width:100%;
+            border-radius: 5px;
+          }
+          .box:hover{
+            transform: scale(1.3);
+            z-index: 2;
+          }
+
+          @media (max-width: 700px) {
+  .container-img {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    margin: 10px 0;
+  }
+}
+          </style>
+      </section>
+
+      
+
+
+
+       
+
+    
+    
+     
+
+
+    </section>
+    <br><br><br><br><br><br><br><br>
+    <section class="slideshow reveal">
+      <div class="slider">
+        
+        
+        <div class="slides">
+           <input type="radio" name="radio-btn" id="radio1">
+           <input type="radio" name="radio-btn" id="radio2">
+           <input type="radio" name="radio-btn" id="radio3">
+           <input type="radio" name="radio-btn" id="radio4">
+  
+  
+           <div class="slide first">
+            <img src="poze/ss_1.png" alt="">
+          </div>
+    
+          <div class="slide">
+            <img src="poze/ss_2.png" alt="">
+          </div>
+    
+          <div class="slide">
+            <img src="poze/ss_3.png" alt="">
+          </div>
+    
+          <div class="slide">
+            <img src="poze/ss_4.png" alt="">
+          </div>
+  
+        </div>
+  
+  
+        
+        
+  
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+  
+  
+  
+      </div>
+      
+     
+  
+  
+  
+      <script >
+       var counter=1;
+       setInterval(function(){
+        document.getElementById('radio' + counter).checked=true;
+        counter++;
+        if(counter>4){counter=1;}
+       },4000)
+  
+      </script>
+     </section>
+
+    
+    <!---Reviews-->
+    
+    <section class="Reviews">
+      
+      <h1>Reviews</h1>
+      <div class="row reveal">
+          <div class="reviews-col reveal">
+           <img src="poze/user.png">
+              <div>
+               <p>"Am avut o experiență minunată lucrând cu echipa de instructori de fitness de la acest centru. Am fost impresionat de profesionalismul și dedicarea lor în a mă ajuta să-mi ating obiectivele de fitness. Antrenorii au fost extrem de bine pregătiți și au creat programe personalizate adaptate nevoilor mele. Îmi place atmosfera pozitivă din sala de antrenament și modul în care fiecare instructor m-a motivat să îmi depășesc limitele. Recomand cu căldură acest centru tuturor celor care doresc să își îmbunătățească sănătatea și condiția fizică!"</p>
+               <H3>Maria Ionescu</H3>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+              </div>
+          </div>
+     
+          <div class="reviews-col reveal">
+           <img src="poze/user.png">
+              <div>
+               <p>"Echipa de instructori de fitness de la acest centru este cu adevărat excepțională! Fiecare antrenor este pasionat de ceea ce face și oferă o atenție deosebită nevoilor și obiectivelor fiecărui client. Am fost impresionat de diversitatea programelor de antrenament pe care le oferă și de abordarea lor holistică în ceea ce privește sănătatea și bunăstarea. Atmosfera este prietenoasă și încurajatoare, ceea ce m-a făcut să mă simt motivat și confortabil în fiecare ședință. Cu siguranță voi continua să lucrez cu acești profesioniști în fitness și îi recomand cu încredere tuturor celor care caută o echipă dedicată să îi ajute să își atingă obiectivele de fitness și sănătate!"</p>
+               <H3>Alexandru Radu</H3>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+              </div>
+          </div>
+ 
+          
+     
+     
+      </div>
+     
+     </section>
+    
+   
+
+  <!--Harta-->
+
+
+  <section class="map">
+
+    <div class="map reveal" style="border: 10px solid transparent;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);">
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.7851373823833!2d26.107547676686416!3d44.37600230538272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fe1851610ddb%3A0x790f1398c5087819!2sWorld%20gym%20academy!5e0!3m2!1sro!2sro!4v1715874235622!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </div>
+  </section>
+
+
+    <!--Contact-->
+    
+    <section class="contact reveal">
+      <div class="reveal"><h1>Alătură-te nouă și transformă-ți pasiunea pentru fitness într-o experiență profundă! <br>
+       Te așteptăm să ne scrii!</h1>
+      <a href="contact.html" class="visit reveal">Contactează-ne!</a></div>
+    </section>
+    
+     
+    
+    
+    <section class="footer">
+      <h4>Bratu Cosmin-Mihai</h4>
+      <h4>Universitatea Tehnica de Constructii Bucuresti</h4>
+      <h4>Bd. Lacul Tei nr. 122 - 124, cod 020396, Sector 2, Bucuresti</h4>
+      <h4>Tel.:0737331436</h4>
+      <h4>Email:bratuucosmin@yahoo.com</h4>
+      <div class="icons">
+        <a href="https://ro-ro.facebook.com/"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/home?lang=ro"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+      <a href="https://ro.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+      </div>
+    
+    
+     </section>  
+     
+     
+
+
+
+</body>
+</html>

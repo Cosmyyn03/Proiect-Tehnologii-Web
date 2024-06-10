@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+
+
+
+
+  <title>Deconectare</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#delogareBtn').click(function() {
+        $.ajax({
+          url: 'delogare.php',
+          type: 'POST',
+          success: function(response) {
+            if (response === 'success') {
+             
+              window.location.href = 'login.php';
+            } else {
+             
+              console.log('Eroare la delogare.');
+            }
+          }
+        });
+      });
+    });
+  </script>
+  
+</head>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: linear-gradient(rgba(6, 1, 27, 0.596),rgba(6, 1, 27, 0.596)),url(poze/banner.png);
+  }
+
+
+  .container {
+    text-align: center;
+  }
+
+  .container h1 {
+    margin-bottom: 10px;
+  }
+
+  .container button {
+    display: block;
+    margin: 0 auto;
+  }
+
+
+  .visit{display:inline-block;text-decoration:none;color:white;
+        border: 1px solid white; 
+         padding:12px 34px;
+        font-size:13px;
+      background:transparent;
+    position:relative;
+  cursor:pointer;}
+  
+  .visit:hover{
+    border: 1px solid rgb(61, 204, 61);
+    background:rgb(61, 204, 61);
+    transition:0.5s;
+
+  }
+</style>
+<body>
+  
+  <div class="container">
+    
+    <h1 style="color:white;">Apasa aici daca vrei sa te deloghezi</h1>
+    <button id="delogareBtn">Delogare</button>
+    <h1 style="color:white;">Apasa aici daca vrei sa te intorci acasa</h1>
+    <a href="index.html" class="visit">ACASA</a>
+    
+  </div>
+</body>
+</html>

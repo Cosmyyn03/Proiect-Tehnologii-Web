@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="with=device-width, initial- scale=1.0">
+    <title>Platforma Web Sala de Fitness,Antrenamente Personale</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formular.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="scripts.js" defer></script>
+</head>
+<body>
+   <section class="header">
+        <nav>
+          <div class="logo">
+            <h4>Fitness.ro</h4>
+          </div>
+          <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="ascundeMeniul()"></i>
+           <ul>
+             <li><a href="index.html">ACASĂ</a></li>
+             <li><a href="Descopera-ne.html">DESCOPERĂ-NE</a></li>
+             <li><a href="vreausamaantrenez.html">VREAU SĂ MĂ ANTRENEZ!</a></li>
+             <li><a href="contact.html">CONTACT</a></li>
+             
+
+            </ul>
+            </div>
+            <i class="fa fa-bars"onclick="arataMeniul()"></i>
+        </nav>
+       
+ 
+        
+
+
+
+        <div class="formular">
+          <h2>Înscrie-te la programul nostru!</h2>
+          <form action="#" method="post">
+              <div class="form-group">
+                  <label for="nume">Nume:</label>
+                  <input type="text" id="nume" name="nume" required>
+              </div>
+              <div class="form-group">
+                  <label for="prenume">Prenume:</label>
+                  <input type="text" id="prenume" name="prenume" required>
+              </div>
+              <div class="form-group">
+                  <label for="email">Adresă de Email:</label>
+                  <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                  <label for="greutate">Greutate (kg):</label>
+                  <input type="number" id="greutate" name="greutate" required>
+              </div>
+              <div class="form-group">
+                  <label for="inaltime">Înălțime (cm):</label>
+                  <input type="number" id="inaltime" name="inaltime" required>
+              </div>
+              <div class="form-group">
+                  <label for="scop">Scop:</label>
+                  <select id="scop" name="scop" required>
+                      <option value="slabire">Slăbire</option>
+                      <option value="crestere-masa">Creștere masă musculară</option>
+                      <option value="tonifiere">Tonifiere</option>
+                      <option value="mentinere">Menținere</option>
+                  </select>
+              </div>
+              <button type="button" onclick="salveazaDate()">Trimite!</button>
+          </form>
+      </div>
+   </section>
+ 
+
+ <section class="footer">
+  <h4>Bratu Cosmin-Mihai</h4>
+  <h4>Universitatea Tehnica de Constructii Bucuresti</h4>
+  <h4>Bd. Lacul Tei nr. 122 - 124, cod 020396, Sector 2, Bucuresti</h4>
+  <h4>Tel.:0737331436</h4>
+  <h4>Email:bratuucosmin@yahoo.com</h4>
+  <div class="icons">
+    <a href="https://ro-ro.facebook.com/"><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com/home?lang=ro"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+  <a href="https://ro.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+  </div>
+
+
+ </section>  
+ 
+ 
+ <script>
+  var navLinks= document.getElementById("navLinks");
+  function arataMeniul()
+    {navLinks.style.right = "0" ;
+
+    }
+  function ascundeMeniul()
+    {navLinks.style.right = "-200px"; 
+
+    }
+    
+</script>
+
+</body>
+</html>
